@@ -107,32 +107,19 @@ main {
     width: 90%;
 }
 
-.infotext {
-    text-indent: 24px;
-    text-align: justify;
-    margin: 1%;
-}
-
 h1 {
     text-align: center;
     padding: 1%;
     color: white;
     font-family: 'Century Gothic';
-
 }
 
-.sales p, .features p {
+.sales p {
     font-size: 12px;
     margin-left: 2%;
 }
-
-.features .image-block .AdditionalImage {
+.image-block {
     width: 50%; /* set the desired width */
-    height: auto;
-}
-
-.infoimage img {
-    width: 100%;
     height: auto;
 }
 
@@ -201,19 +188,10 @@ footer {
         justify-content: space-between;
     }
 
-    .infotext {
-        width: 48%; /* 2% for margin */
-        font-size: 19px; /* To make it easier to read */
-    }
-
-    .infoimage {
-        width: 48%;
-    }
-
     .image-block {
         flex: 1 1 calc(25% - 20px); /* Four images in a row */
     }
-    .features .image-block {
+    .image-block {
         flex: 1 1 calc(15% - 20px); /* Four images in a row */
     }
 
