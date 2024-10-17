@@ -219,3 +219,6 @@ footer {
         display: none;
     }
 }
+body {
+    background-color: hsl(86, 53%, 79%);
+}
