@@ -1,0 +1,27 @@
+body {
+    background-color: hsl(86, 53%, 79%);
+}
+
+.menunav ul {
+        list-style-type: none;
+        background-color: rgb(173, 158, 22);
+        padding: 0px;
+        margin: 0px;
+        overflow: hidden;
+}
+
+.menunav a{
+
+    color: rgb(12, 13, 14);
+    text-decoration: none;
+    padding: 15px;
+    display: block;
+    text-align: center;
+}
+
+.menunav a:hover{
+    background-color: grey;
+}
+.menunav li{
+    float: left;
+}
