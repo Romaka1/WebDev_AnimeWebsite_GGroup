@@ -303,7 +303,11 @@ button {
         display: none;
     }
 
+    .contact-inputs{
+        max-width: 90%;
+    }
     
-    
-
+    .contact-page-title{
+        width:90%;
+    }
 }
