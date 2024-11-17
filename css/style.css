@@ -205,8 +205,9 @@ footer {
     color: white;
     text-align: center;
     padding: 1em;
-    bottom: 0;
+    bottom: 0; 
     width: 100%;
+   
 }
 .contact-containers {
     display: flex;
@@ -295,4 +296,44 @@ button {
         display: none;
     }
 
+
+   
+
+}
+
+@media (max-width: 600px) {
+
+
+    .menunav {
+        display: flex;
+        justify-content: space-between;
+    
+    }
+
+        .menunav li {
+            flex: 1; /* Equal width for each li in the row */
+            margin: 0 5px;
+            display: block;
+        }
+
+            .menunav li a {
+                text-align: center;/* Center text within each li */
+                font-size: medium;
+            }
+
+    ul.menunav li.hiden {
+        display: inline-block;
+    }
+
+    ul.menunav li:first-child {
+        display: none;
+    }
+
+    .contact-inputs{
+        max-width: 90%;
+    }
+    
+    .contact-page-title{
+        width:90%;
+    }
 }
