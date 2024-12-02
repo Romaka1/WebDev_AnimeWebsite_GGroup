@@ -35,9 +35,22 @@
                     <h2>Contact Us</h2>
                     <hr>
                 </div>
+
                 <input type="text" name="name" placeholder="Your Name" class="contact-inputs" required>
                 <input type="email" name="email" placeholder="Your Email" class="contact-inputs" required>
+                <input type="tel" name="phoneNo" placeholder="Enter your Phone Number" class="contact-inputs" pattern="[0-9]{3} [0-9]{3} [0-9]{4}" required>  <small>Format: 123 567 8912</small>
+
+               
+                 <br> <label for="selection"><small>Choose your Preferred Contact Method</small></label>
+                 <br>    <select name="Contact_Method" id="myselect">
+                            <option value="">Please Select</option>
+                            <option value="Email">Email</option>
+                            <option value="Phone">Phone Number</option>
+                            <option value="None">Don't Contact</option>
+                        </select>
+                
                 <textarea name="message" cols="10" placeholder="Your Question" class="contact-inputs" required></textarea>
+
                     <button type="submit">Submit</button>
             </form>
         </div>
@@ -49,5 +62,6 @@
         Email: customersupport@AnimeHeaven.com || Phone: +353 87 214 5566
     </p>
 </footer>
+<script src="..\javascript\contactScript.js"></script>
 </body>
 </html>
