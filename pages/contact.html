@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Anime Heaven</title>
-    <link rel="stylesheet" href="..\css\style.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="../js/validation.js" defer></script>
 </head>
 <body>
     <header>
@@ -17,7 +18,6 @@
         <li class="hiden"><a href="recycle.html">Recycle</a></li>
         <li class="hiden"><a href="contact.html">Contact</a></li>
         <li class="hiden"><a href="about.html">About us</a></li>
-
     </ul>
     <div id="video-container">
         <video autoplay muted loop>
@@ -26,28 +26,34 @@
         </video>
     </div>
     <main>
-    <div id="topblock">
-        <h4>Thank you for visiting our Anime Haven! Whether you have suggestions, questions, or feedback, we'd love to hear from you. Please fill out the form below, and our team will get back to you as soon as possible. Let's share our passion for anime together!</h4>
-    </div>
+        <div id="topblock">
+            <h4>Thank you for visiting Anime Heaven! Whether you have suggestions, questions, or feedback, we'd love to hear from you. Please fill out the form below, and our team will get back to you as soon as possible. Let's share our passion for anime together!</h4>
+        </div>
         <div class="contact-containers">
-            <form class="contact-page-title">
+            <form class="contact-page-title" id="contactForm" action="thank-you.html" method="get">
                 <div class="contact-top-title">
                     <h2>Contact Us</h2>
                     <hr>
                 </div>
-                <input type="text" name="name" placeholder="Your Name" class="contact-inputs" required>
-                <input type="email" name="email" placeholder="Your Email" class="contact-inputs" required>
-                <textarea name="message" cols="10" placeholder="Your Question" class="contact-inputs" required></textarea>
-                    <button type="submit">Submit</button>
+                <input type="text" name="name" id="name" placeholder="Your Full Name" class="contact-inputs" required>
+                <input type="email" name="email" id="email" placeholder="Your Email Address" class="contact-inputs" required>
+                <select name="contactMethod" id="contactMethod" class="contact-inputs" required>
+                    <option value="" disabled selected>Select Preferred Contact Method</option>
+                    <option value="email">Email</option>
+                    <option value="phone">Phone</option>
+                    <option value="none">None</option>
+                </select>
+                <textarea name="message" id="message" cols="10" placeholder="Your Message" class="contact-inputs" required></textarea>
+                <button type="submit">Submit</button>
             </form>
         </div>
     </main>
     <footer>
-    <p>
-        &copy; Anime - 16/10/2024. All rights reserved.
-        <br />
-        Email: customersupport@AnimeHeaven.com || Phone: +353 87 214 5566
-    </p>
-</footer>
+        <p>
+            &copy; Anime - 16/10/2024. All rights reserved.
+            <br />
+            Email: customersupport@AnimeHeaven.com || Phone: +353 87 214 5566
+        </p>
+    </footer>
 </body>
 </html>
